@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catálogo de Vídeos - Raps e Curiosidades de Dragon Ball</title>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Kanit', sans-serif;
+            background-color: #282828;
+            color: #f1c40f;
+            margin: 0;
+            padding: 20px;
+        }
+        header {
+            text-align: center;
+            background-color: #f39c12;
+            color: #fff;
+            padding: 20px 0;
+            margin-bottom: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+        }
+        header h1 {
+            margin: 0;
+            font-size: 2.5rem;
+            text-shadow: 2px 2px #e67e22;
+        }
+        .container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+        }
+        .video-card {
+            background-color: #444;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+            overflow: hidden;
+            transition: transform 0.3s;
+        }
+        .video-card:hover {
+            transform: scale(1.05);
+        }
+        .video-card iframe {
+            width: 100%;
+            height: 200px;
+            border-bottom: 4px solid #e67e22;
+        }
+        .video-card .description {
+            padding: 15px;
+            text-align: center;
+            color: #fff;
+        }
+        .video-card h3 {
+            margin: 0;
+            font-size: 1.5rem;
+            color: #e67e22;
+        }
+        .video-card p {
+            margin-top: 5px;
+            color: #f39c12;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Catálogo de Vídeos - Raps e Curiosidades de Dragon Ball</h1>
+    </header>
+    <div class="container">
+        <!-- Vídeos de raps -->
+        <div class="video-card">
+            <iframe src="https://www.youtube.com/embed/f0cbC39pRyo" title="Rap de Dragon Ball 1" loading="lazy"></iframe>
+            <div class="description">
+                <h3>Rap de Dragon Ball #1</h3>
+                <p>Um rap que fala sobre as lutas de Dragon Ball. Confira!</p>
+            </div>
+        </div>
+        <div class="video-card">
+            <iframe src="https://www.youtube.com/embed/lMLwbtX2LJ4" title="Rap de Dragon Ball 2" loading="lazy"></iframe>
+            <div class="description">
+                <h3>Rap de Dragon Ball #2</h3>
+                <p>Mais um rap legal sobre a saga e seus personagens.</p>
+            </div>
+        </div>
+
+        <!-- Vídeos de curiosidades -->
+        <div class="video-card">
+            <iframe src="https://www.youtube.com/embed/8QJ4uT3iS6Q" title="Curiosidades sobre Dragon Ball 1" loading="lazy"></iframe>
+            <div class="description">
+                <h3>Curiosidades sobre Dragon Ball #1</h3>
+                <p>Veja algumas curiosidades que você talvez não saiba sobre Dragon Ball.</p>
+            </div>
+        </div>
+        <div class="video-card">
+            <iframe src="https://www.youtube.com/embed/u6o0J6Q_cA8" title="Curiosidades sobre Dragon Ball 2" loading="lazy"></iframe>
+            <div class="description">
+                <h3>Curiosidades sobre Dragon Ball #2</h3>
+                <p>Fatos interessantes sobre a série que vão te surpreender!</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
